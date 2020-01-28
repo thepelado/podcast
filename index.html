@@ -6,53 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Cristian Brunacci">
     <meta name="description" content="Proyecto de Lading page para la carrera de desarrollo web full stack">
-    <title>Podcast - Acamica</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <title>Podcast - Acamica</title>
 </head>
 <body>
     <nav>
-        <img id="logo" src="assets/logo.svg" alt="Logo" title="Logo">
-        <button id="mobile-menu" class="btn" style="display:none;"></button>
-        <ul>
-            <li><a href="#episodios" title="Episodios">Episodios</a></li>
-            <li><a href="#nosotros" title="Nosotros">Nosotros</a></li>
-            <li><a href="#entrevistas" title="Entrevistas">Entrevistas</a></li>
-            <li><a href="#topicos" title="Topicos">Topicos</a></li>
+        <ul class="menu">
+            <li class="logo">
+                <a href="#">
+                    <img src="assets/logo.svg" alt="Logo" title="Logo">
+                </a>
+            </li>
+            <li class="item"><a href="#episodios" title="Episodios">Episodios</a></li>
+            <li class="item"><a href="#nosotros" title="Nosotros">Nosotros</a></li class="item">
+            <li class="item"><a href="#entrevistas" title="Entrevistas">Entrevistas</a></li class="item">
+            <li class="item"><a href="#topicos" title="Topicos">Topicos</a></li class="item">
+            <li class="toggle">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </li>
         </ul>
     </nav>
-    <section id="main">
+    <section class="home" id="main">
         <h1>Hello <strike>world</strike> pale blue dot<span class="dot">.</span></h1>
         <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
         <a href="#episodios" class="btn">CONOCÉ MÁS</a>
     </section>
-    <section class="diagonal" id="episodios">
+    <section class="episodios diagonal" id="episodios">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="white" points="0,100 0,0 100,0"></polygon>
+        </svg>
         <h2>Episodios</h2>
         <div class="widgets">
-            <div class="reproductor">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="reproductor">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="reproductor">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="reproductor">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="white" points="0,100 100,0 100,100"></polygon>
+        </svg>
     </section>
-    <section id="nosotros">
-        <img src="./assets/phone.png" alt="Phone" title="Phone">
+    <section class="nosotros" id="nosotros">
+        <img src="./assets/phone.png" alt="Phone" title="Phone" class="telefono">
         <div class="texto">
             <h2>De dónde venimos</h2>
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
                 Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
         </div>
     </section>
-    <section id="entrevistas">
+    <section class="entrevistas" id="entrevistas">
         <h2>Invitadas/os estelares</h2>
         <div class="gallery">
             <img src="./assets/grace-hopper.png" alt="Grace Hopper" title="Grace Hopper">
@@ -63,20 +70,33 @@
             <img src="./assets/susan-kare.png" alt="Susan Kare" title="Susan Kare">
         </div>
     </section>
-    <section id="topicos">
+    <section class="topicos">
         <h2>Algunos de nuestros temas</h2>
         <ul>
-            <li><img src="./assets/icon1.svg" alt="Trabajo remoto" title="Trabajo remoto">Trabajo remoto</li>
-            <li><img src="./assets/icon2.svg" alt="Repensando la programación" title="Repensando la programación">Repensando la programación</li>
-            <li><img src="./assets/icon3.svg" alt="Bases del código" title="Bases del código">Bases del código</li>
-            <li><img src="./assets/icon4.svg" alt="Seguridad informática" title="Seguridad informática">Seguridad informática</li>
+            <li>
+                <img src="./assets/icon1.svg" alt="Trabajo remoto" title="Trabajo remoto">
+                <h3>Trabajo remoto</h3>
+            </li>
+            <li>
+                <img src="./assets/icon2.svg" alt="Repensando la programación" title="Repensando la programación">
+                <h3>Repensando la programación</h3>
+            </li>
+            <li>
+                <img src="./assets/icon3.svg" alt="Bases del código" title="Bases del código">
+                <h3>Bases del código</h3>
+            </li>
+            <li>
+                <img src="./assets/icon4.svg" alt="Seguridad informática" title="Seguridad informática">
+                <h3>Seguridad informática</h3>
+            </li>
         </ul>
     </section>
-    <section class="diagonal" id="ultimas-novedades">
+    <section class="novedades diagonal" id="ultimas-novedades">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="white" points="0,100 0,0 100,0"></polygon>
+        </svg>
         <h2>¿Querés las últimas novedades?</h2>
-        <div class="center">
-            <a href="#episodios" class="btn">ESCUCHÁ LOS EPISODIOS</a>
-        </div>
+        <a href="#episodios" class="btn">ESCUCHÁ LOS EPISODIOS</a>
     </section>
     <footer>
         <p>© 2019— Hello blue pale dot </p>
@@ -88,5 +108,27 @@
             <li><i class="fab fa-telegram"></i></li>
         </ul>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+                $(this).find("a").html("<i class='fas fa-bars'></i>");
+            } else {
+                $(".item").addClass("active");
+                $(this).find("a").html("<i class='fas fa-times'></i>");
+            }
+        });
+
+        $(".item").on("click", function() {
+            if ($(".item").hasClass("active"))
+            {
+                $(".item").removeClass("active");
+                $(".toggle").find("a").html("<i class='fas fa-bars'></i>");
+            }
+        });
+    });
+    </script>
 </body>
 </html>
