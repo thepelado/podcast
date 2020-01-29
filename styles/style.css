@@ -69,7 +69,6 @@ p {
 }
 
 .diagonal {
-    /*clip-path: polygon(0 2%, 100% 0,100% 98%,0 100%);*/
     background-image: linear-gradient(225deg, #FFF, #0000FF 0%, #0000A3 100%);
     position: relative;
 }
@@ -236,6 +235,7 @@ nav .menu .toggle {
     list-style: none;
     display: flex;
     flex-flow: column wrap;
+    margin-bottom: 34px;
 }
 
 .topicos ul li {
@@ -474,7 +474,6 @@ footer .social li a {
 
     .topicos ul {
         flex-flow: row wrap;
-        margin-bottom: 34px;
     }
 
     .topicos ul li {
@@ -490,6 +489,7 @@ footer .social li a {
     /*1.7 Ultimas novedades*/
     .novedades {
         padding-top: 213px;
+        padding-bottom: 151px;
         text-align: center;
     }
 
@@ -499,7 +499,6 @@ footer .social li a {
 
     .novedades .btn {
         display: inline-block;
-        margin-bottom: 151px;
     }
 
     /*1.8 Footer*/
