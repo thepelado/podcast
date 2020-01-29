@@ -158,6 +158,10 @@ nav .menu .toggle {
     margin-top: 16px;
 }
 
+.home .tachado {
+    text-decoration: line-through;
+}
+
 .home .btn {
     margin-top: 36px;
     margin-bottom: 24px;
