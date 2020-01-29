@@ -36,6 +36,13 @@ h2 {
     font-weight: 500;
 }
 
+a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
 p {
     font-family: 'IBM Plex Mono', monospace;
     color: #060A24;
@@ -127,12 +134,7 @@ nav .menu .item {
 }
 
 nav .menu .item a {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    line-height: 28px;
-    text-decoration: none;
+    color: #FFFFFF; 
     text-transform: uppercase;
 }
 
@@ -298,6 +300,10 @@ footer .social li i {
     line-height: 28px;
 }
 
+footer .social li a {
+    color: #060A24;
+}
+
 @media all and (min-width: 1440px) {
     
     /*1 General*/
@@ -345,6 +351,19 @@ footer .social li i {
 
     nav .menu .item a {
         color: #060A24;
+    }
+
+    nav .menu .item a:hover {
+        font-weight: 700;
+        color: #00F3BB;
+        text-decoration: line-through;
+    }
+
+    nav .menu .item a:active {
+        color: #060A24;
+        font-weight: 500;
+        text-decoration: line-through;
+        opacity: .56;
     }
 
     nav .menu .toggle {
