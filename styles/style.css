@@ -28,8 +28,9 @@ h3 {
     letter-spacing: 0;
 }
 
-h1 .dot {
+h1::after {
     color:#0000EC;
+    content:".";
 }
 
 h2 {
