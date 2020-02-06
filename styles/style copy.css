@@ -198,7 +198,7 @@ nav .menu .toggle {
 }
 
 .episodios .widgets iframe {
-    width: 100%;
+    width: 298px;
     padding: 11px;
     border: none;
 }
@@ -213,13 +213,6 @@ nav .menu .toggle {
     height: 519px;
     margin-top: -105px;
     position: relative;
-}
-
-.nosotros .texto {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: column;
 }
 
 .nosotros .texto h2 {
@@ -241,8 +234,7 @@ nav .menu .toggle {
 }
 
 .entrevistas .gallery img {
-    width: 320px;
-    flex: 1 0 33.33%;
+    width: 100%;
 }
 
 /*1.6 Topicos */
@@ -463,15 +455,15 @@ footer .social li a {
 
     /*1.4 Nosotros*/
     .nosotros {
-        flex-direction: row;
-        align-items: unset;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .nosotros .telefono {
         width: 457.6px;
         height: 660px;
         margin-top: -165px;
+        margin-left: 200px;
     }
 
     .nosotros .texto {
@@ -484,23 +476,17 @@ footer .social li a {
     }
 
     /*1.5 Entrevistas*/
-    .entrevistas {
-        align-items: flex-start;
-        justify-content: stretch;
-    }
-
     .entrevistas h2 {
         margin: 64px 0 36px 200px;
     }
 
     .entrevistas .gallery img {
         width: 480px;
-        flex: 1 0 33.33%;
     }
 
     /*1.6 Topicos*/
     .topicos {
-        margin-top: 64px;
+        margin: 64px 200px 0px 200px;
     }
 
     .topicos h2 {
@@ -509,14 +495,10 @@ footer .social li a {
 
     .topicos ul {
         flex-flow: row wrap;
-        list-style: none;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
 
     .topicos ul li {
         width: 260px;
-        flex: 1 0 25%;
         margin: 0px;
     }
 
@@ -541,26 +523,13 @@ footer .social li a {
     }
 
     /*1.8 Footer*/
-    footer {
-        padding: 0px 100px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-    }
-
     footer p {
         font-size: 16px;
         line-height: 28px;
         margin-top: 36px;
-        flex: 50%;
     }
 
     footer .social {
         margin-top: 36px;
-        display: flex;
-        margin-bottom: 31px;
-        justify-content: flex-end;
-        align-items: flex-start;
     }
 }
