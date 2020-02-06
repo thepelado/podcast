@@ -259,14 +259,14 @@ nav .menu .toggle {
 .topicos ul {
     list-style: none;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     margin-bottom: 34px;
 }
 
 .topicos ul li {
-    width: 100%;
     margin-bottom: 42px;
     text-align: center;
+    flex: 1 0 25%;
 }
 
 .topicos ul li:last-child {
@@ -507,16 +507,7 @@ footer .social li a {
         margin-bottom: 56px;
     }
 
-    .topicos ul {
-        flex-flow: row wrap;
-        list-style: none;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
     .topicos ul li {
-        width: 260px;
-        flex: 1 0 25%;
         margin: 0px;
     }
 
