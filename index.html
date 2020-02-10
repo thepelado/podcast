@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>Podcast - Acamica</title>
 </head>
 <body>
@@ -103,7 +103,7 @@
         <p>© 2019— Hello blue pale dot </p>
         <ul class="social">
             <li>
-                <a href="#" title="spotify" target="_blank">
+                <a href="#" title="Spotify" target="_blank">
                     <i class="fab fa-spotify"></i>
                 </a>
             </li>
@@ -130,26 +130,6 @@
         </ul>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    $(function() {
-        $(".toggle").on("click", function() {
-            if ($(".item").hasClass("active")) {
-                $(".item").removeClass("active");
-                $(this).find("a").html("<i class='fas fa-bars'></i>");
-            } else {
-                $(".item").addClass("active");
-                $(this).find("a").html("<i class='fas fa-times'></i>");
-            }
-        });
-
-        $(".item").on("click", function() {
-            if ($(".item").hasClass("active"))
-            {
-                $(".item").removeClass("active");
-                $(".toggle").find("a").html("<i class='fas fa-bars'></i>");
-            }
-        });
-    });
-    </script>
+    <script src="./js/functions.js"></script>
 </body>
 </html>

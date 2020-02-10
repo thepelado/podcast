@@ -1,0 +1,50 @@
+/*1.4 Nosotros */
+.nosotros {
+    align-items: center;
+}
+
+.nosotros .telefono {
+    height: 519px;
+    margin-top: -105px;
+    position: relative;
+}
+
+.nosotros .texto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+.nosotros .texto h2 {
+    margin: 27px 16px 8px 16px;
+}
+
+.nosotros .texto p {
+    margin: 0 16px;
+}
+
+@media all and (min-width: 1440px) {
+    
+    /*1.4 Nosotros*/
+    .nosotros {
+        flex-direction: row;
+        align-items: unset;
+        justify-content: center;
+    }
+
+    .nosotros .telefono {
+        width: 457.6px;
+        height: 660px;
+        margin-top: -165px;
+    }
+
+    .nosotros .texto {
+        width: 464px;
+    }
+
+    .nosotros .texto h2 {
+        margin-top: 20.4px;
+        margin-bottom: 24px;
+    }
+}

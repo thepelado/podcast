@@ -1,0 +1,54 @@
+/*1.6 Topicos */
+.topicos {
+    margin-top: 48px;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.topicos h2 {
+    margin-bottom: 24px;
+}
+
+.topicos ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 34px;
+}
+
+.topicos ul li {
+    margin-bottom: 42px;
+    text-align: center;
+    flex: 1 0 25%;
+}
+
+.topicos ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.topicos ul li img {
+    width: 104px;
+    height: 104px;    
+    padding: 13px 92px;
+}
+
+@media all and (min-width: 1440px) {
+    
+    /*1.6 Topicos*/
+    .topicos {
+        margin-top: 64px;
+    }
+
+    .topicos h2 {
+        margin-bottom: 56px;
+    }
+
+    .topicos ul li {
+        margin: 0px;
+    }
+
+    .topicos ul li img {
+        padding: 13px 78px;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,61 @@
+/*1.3 Episodios */
+.episodios {
+    padding-top: 64px;
+    padding-bottom: 143.5px;
+}
+
+.episodios h2 {
+    color: #FFF;
+    margin: 0 16px 10px 16px;
+}
+
+.episodios .widgets {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+.episodios .widgets iframe {
+    width: 100%;
+    padding: 11px;
+    border: none;
+}
+
+@media all and (min-width: 1440px) {
+
+    /*1.3 Episodios */
+    .episodios {
+        padding-top: 186px;
+        padding-bottom: 226.6px;
+    }
+
+    .episodios h2 {
+        margin-left: 200px;
+    }
+
+    .episodios .widgets {
+        padding: 0px 100px;
+    }
+
+    .episodios .widgets .reproductor {
+        width: 584px;
+        padding: 26px 36px;
+    }
+
+    .episodios .widgets iframe {
+        width: 584px;
+        padding: 26px 36px;
+    }
+
+    .episodios .widgets iframe:first-child,
+    .episodios .widgets iframe:nth-child(3n) {
+        padding-left: 0px;
+    }
+    
+    .episodios .widgets iframe:nth-child(2n),
+    .episodios .widgets iframe:nth-child(4n) {
+        padding-right: 0px;
+    }
+}

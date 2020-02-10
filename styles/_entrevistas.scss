@@ -1,0 +1,32 @@
+/*1.5 Entrevistas*/
+.entrevistas h2 {
+    margin: 54px 16px 14px 16px;
+}
+
+.entrevistas .gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.entrevistas .gallery img {
+    width: 320px;
+    flex: 1 0 33.33%;
+}
+
+@media all and (min-width: 1440px) {
+    
+    /*1.5 Entrevistas*/
+    .entrevistas {
+        align-items: flex-start;
+        justify-content: stretch;
+    }
+
+    .entrevistas h2 {
+        margin: 64px 0 36px 200px;
+    }
+
+    .entrevistas .gallery img {
+        width: 480px;
+        flex: 1 0 33.33%;
+    }
+}
