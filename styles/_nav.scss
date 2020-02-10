@@ -57,6 +57,10 @@ nav .menu .toggle {
     margin-right: 16px;
 }
 
+nav .menu .toggle a:hover {
+    color: $text-link-normal;
+}
+
 
 @media all and (min-width: 1440px) {
     
