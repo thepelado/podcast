@@ -1,3 +1,5 @@
+$breakpoint-desktop: '1440px';
+
 $font-normal: 'IBM Plex Sans', monospace;
 $font-bold: 'IBM Plex Mono', monospace;
 
@@ -127,7 +129,7 @@ svg:last-child {
     text-align: center;
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: $breakpoint-desktop) {
     
     /*1 General*/
     h1 {

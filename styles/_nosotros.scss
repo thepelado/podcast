@@ -24,7 +24,7 @@
     margin: 0 16px;
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: $breakpoint-desktop) {
     
     /*1.4 Nosotros*/
     .nosotros {

@@ -62,7 +62,7 @@ nav .menu .toggle a:hover {
 }
 
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: $breakpoint-desktop) {
     
     /*1.1 Nav */
     nav {

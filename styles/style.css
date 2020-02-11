@@ -334,6 +334,9 @@ nav .menu .toggle a:hover {
   width: 100%;
   padding: 11px;
   border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
 }
 
 @media all and (min-width: 1440px) {

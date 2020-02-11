@@ -14,7 +14,7 @@
     flex: 1 0 33.33%;
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: $breakpoint-desktop) {
     
     /*1.5 Entrevistas*/
     .entrevistas {

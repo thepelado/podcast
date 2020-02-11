@@ -20,7 +20,7 @@
     display: block;
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: $breakpoint-desktop) {
     
     /*1.2 Home */
     .home {
