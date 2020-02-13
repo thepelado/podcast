@@ -3,17 +3,16 @@
     padding-top: 64px;
     padding-bottom: 67px;
     align-items: center;
-}
-
-.novedades h2 {
-    color: #FFF;
-    text-align: center;
-    margin: 0 16px 36px 16px;
-}
-
-.novedades .btn {
-    padding: 13px 43px;
-    margin: 0px 16px;
+    & h2 {
+        color: #FFF;
+        text-align: center;
+        margin: 0 16px 36px 16px;
+    }
+    
+    & .btn {
+        padding: 13px 43px;
+        margin: 0px 16px;
+    }
 }
 
 @media all and (min-width: $breakpoint-desktop) {
@@ -23,13 +22,12 @@
         padding-top: 213px;
         padding-bottom: 151px;
         text-align: center;
-    }
-
-    .novedades svg {
-        left: 0;
-    }
-
-    .novedades .btn {
-        display: inline-block;
+        & svg {
+            left: 0;
+        }
+    
+        & .btn {
+            display: inline-block;
+        }
     }
 }

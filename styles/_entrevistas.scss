@@ -1,17 +1,17 @@
 /*1.5 Entrevistas*/
-.entrevistas h2 {
-    margin: 54px 16px 14px 16px;
-}
-
-.entrevistas .gallery {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.entrevistas .gallery img {
-    width: 320px;
-    height: 100%;
-    flex: 1 0 33.33%;
+.entrevistas {
+    & h2 {
+        margin: 54px 16px 14px 16px;
+    }
+    & .gallery {
+        display: flex;
+        flex-flow: row wrap;
+        & img {
+            width: 320px;
+            height: 100%;
+            flex: 1 0 33.33%;
+        }
+    }
 }
 
 @media all and (min-width: $breakpoint-desktop) {
@@ -20,14 +20,14 @@
     .entrevistas {
         align-items: flex-start;
         justify-content: stretch;
-    }
-
-    .entrevistas h2 {
-        margin: 64px 0 36px 200px;
-    }
-
-    .entrevistas .gallery img {
-        width: 480px;
-        flex: 1 0 33.33%;
+        & h2 {
+            margin: 64px 0 36px 200px;
+        }
+        & .gallery {
+            & img {
+                width: 480px;
+                flex: 1 0 33.33%;
+            }
+        }
     }
 }

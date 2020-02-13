@@ -1,66 +1,57 @@
 /*1.1 Navbar */
 nav {
     height: 44px;
+    & .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        position: relative;
+        & li {
+            white-space: nowrap;
+            &.logo {
+                flex: 1;
+                a {
+                    display: inline-flex;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin: 10px 0 10px 16px;
+                }
+            }
+            &.item {
+                background-color: $mobile-background-color;
+                padding: 16px;
+                width: 100%;
+                order: 3;
+                display: none;
+                & a {
+                    color: #FFFFFF; 
+                    text-transform: uppercase;
+                }
+            }
+            &.active {
+                display: block;
+            }
+            &.toggle {
+                order: 1;
+                font-size: 18px;
+                line-height: 24px;
+                margin-right: 16px;
+                &a {
+                    &:hover {
+                        color: $text-link-normal;
+                    }
+                }
+            }
+        }
+    }
 }
-
-nav .menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    position: relative;
-}
-
-nav .menu li {
-    white-space: nowrap;
-}
-
-nav .menu .logo {
-    flex: 1;
-}
-
-nav .menu .logo a {
-    display: inline-flex;
-}
-
-nav .menu .logo img {
-    width: 24px;
-    height: 24px;
-    margin: 10px 0 10px 16px;
-}
-
-nav .menu .item {
-    background-color: $mobile-background-color;
-    padding: 16px;
-    width: 100%;
-    order: 3;
-    display: none;
-}
-
-nav .menu .item a {
-    color: #FFFFFF; 
-    text-transform: uppercase;
-}
-
-nav .menu .item.active {
-    display: block;
-}
-
-nav .menu .toggle {
-    order: 1;
-    font-size: 18px;
-    line-height: 24px;
-    margin-right: 16px;
-}
-
-nav .menu .toggle a:hover {
-    color: $text-link-normal;
-}
-
 
 @media all and (min-width: $breakpoint-desktop) {
     
@@ -68,45 +59,42 @@ nav .menu .toggle a:hover {
     nav {
         height: 80px;
         padding: 0px 100px;
-    }
-
-    nav .menu .logo {
-        order: 0;
-    }
-
-    nav .menu .logo img {
-        width: 36px;
-        height: 36px;
-        margin: 0;
-        margin-top: 22px;
-    }   
-
-    nav .menu .item {
-        display: block;
-        width: auto;
-        text-align: center;
-        padding: 26px 0 26px 28px;
-        order: 1;
-        background: #FFFFFF;
-    }
-
-    nav .menu .item a {
-        color: $text-link-normal;
-    }
-
-    nav .menu .item a:hover {
-        font-weight: 700;
-        color: $text-link-hover;
-    }
-
-    nav .menu .item a:active {
-        color: $text-link-normal;
-        font-weight: 500;
-        text-decoration: line-through;
-        opacity: .56;
-    }
-
-    nav .menu .toggle {
-        display: none;
+        & .menu {
+            & li {
+                &.logo {
+                    order: 0;
+                    & img {
+                        width: 36px;
+                        height: 36px;
+                        margin: 0;
+                        margin-top: 22px;
+                    }
+                }
+                &.item {
+                    display: block;
+                    width: auto;
+                    text-align: center;
+                    padding: 26px 0 26px 28px;
+                    order: 1;
+                    background: #FFFFFF;
+                    & a {
+                        color: $text-link-normal;
+                        &:hover {
+                            font-weight: 700;
+                            color: $text-link-hover;
+                        }
+                        &:active {
+                            color: $text-link-normal;
+                            font-weight: 500;
+                            text-decoration: line-through;
+                            opacity: .56;
+                        }
+                    }
+                }
+                &.toggle {
+                    display: none; 
+                }
+            }
+        }
     }
 }

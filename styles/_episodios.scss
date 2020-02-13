@@ -2,26 +2,23 @@
 .episodios {
     padding-top: 64px;
     padding-bottom: 143.5px;
-}
-
-.episodios h2 {
-    color: #FFF;
-    margin: 0 16px 10px 16px;
-}
-
-.episodios .widgets {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;    
-}
-
-.episodios .widgets iframe {
-    width: 100%;
-    padding: 11px;
-    border: none;
-    flex: 1 0 40%;
+    & h2 {
+        color: #FFF;
+        margin: 0 16px 10px 16px;
+    }
+    & .widgets {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        & iframe {
+            width: 100%;
+            padding: 11px;
+            border: none;
+            flex: 1 0 40%;
+        }
+    }
 }
 
 @media all and (min-width: $breakpoint-desktop) {
@@ -30,33 +27,35 @@
     .episodios {
         padding-top: 186px;
         padding-bottom: 226.6px;
-    }
-
-    .episodios h2 {
-        margin-left: 200px;
-    }
-
-    .episodios .widgets {
-        padding: 0px 100px;
-    }
-
-    .episodios .widgets .reproductor {
-        width: 584px;
-        padding: 26px 36px;
-    }
-
-    .episodios .widgets iframe {
-        width: 584px;
-        padding: 26px 36px;
-    }
-
-    .episodios .widgets iframe:first-child,
-    .episodios .widgets iframe:nth-child(3n) {
-        padding-left: 0px;
-    }
+        & h2 {
+            margin-left: 200px;
+        }
     
-    .episodios .widgets iframe:nth-child(2n),
-    .episodios .widgets iframe:nth-child(4n) {
-        padding-right: 0px;
+        & .widgets {
+            padding: 0px 100px;
+            & iframe {
+                width: 584px;
+                padding: 36px 36px;
+                &:first-child,
+                &:nth-child(2n) {
+                    padding-top: 26px; 
+                }
+                &:first-child,
+                &:nth-child(3n) {
+                    padding-left: 0px;
+                }
+                &:nth-child(2n),
+                &:last-child {
+                    padding-right: 0px;
+                }            
+                &:nth-child(3n),
+                &:last-child {
+                    padding-bottom: 0px;
+                }            
+                &:last-child {
+                    padding-top: 36px;
+                }
+            }
+        }
     }
 }

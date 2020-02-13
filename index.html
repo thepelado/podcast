@@ -1,135 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Cristian Brunacci">
-    <meta name="description" content="Proyecto de Lading page para la carrera de desarrollo web full stack">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <title>Podcast - Acamica</title>
-</head>
-<body>
-    <nav>
-        <ul class="menu">
-            <li class="logo">
-                <a href="#">
-                    <img src="./assets/img/logo.svg" alt="Logo" title="Logo">
-                </a>
-            </li>
-            <li class="item"><a href="#episodios" title="Episodios">Episodios</a></li>
-            <li class="item"><a href="#nosotros" title="Nosotros">Nosotros</a></li>
-            <li class="item"><a href="#entrevistas" title="Entrevistas">Entrevistas</a></li>
-            <li class="item"><a href="#topicos" title="Topicos">Topicos</a></li>
-            <li class="toggle">
-                <a href="#">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <section class="home" id="main">
-        <h1>Hello <span class="tachado">world</span> pale blue dot</h1>
-        <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-        <a href="#episodios" class="btn">CONOCÉ MÁS</a>
-    </section>
-    <section class="episodios diagonal" id="episodios">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="white" points="0,100 0,0 100,0"></polygon>
-        </svg>
-        <h2>Episodios</h2>
-        <div class="widgets">
-            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" height="232" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" height="232" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" height="232" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" height="232" allow="encrypted-media"></iframe>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="white" points="0,100 100,0 100,100"></polygon>
-        </svg>
-    </section>
-    <section class="nosotros" id="nosotros">
-        <img src="./assets/img/phone.png" alt="Phone" title="Phone" class="telefono">
-        <div class="texto">
-            <h2>De dónde venimos</h2>
-            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-        </div>
-    </section>
-    <section class="entrevistas" id="entrevistas">
-        <h2>Invitadas/os estelares</h2>
-        <div class="gallery">
-            <img src="./assets/img/grace-hopper.png" alt="Grace Hopper" title="Grace Hopper">
-            <img src="./assets/img/Katie-Bouman.png" alt="Katie Bouman" title="Katie Bouman">
-            <img src="./assets/img/Margaret_Hamilton.png" alt="Margaret Hamilton" title="Margaret Hamilton">
-            <img src="./assets/img/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s" title="An E.R.A.Univac 1103 computer in the 1950s">
-            <img src="./assets/img/Computer_operators_with_an_Eniac.png" alt="Computer operators with an Eniac" title="Computer operators with an Eniac">
-            <img src="./assets/img/susan-kare.png" alt="Susan Kare" title="Susan Kare">
-        </div>
-    </section>
-    <section class="topicos">
-        <h2>Algunos de nuestros temas</h2>
-        <ul>
-            <li>
-                <img src="./assets/img/icon1.svg" alt="Trabajo remoto" title="Trabajo remoto">
-                <h3>Trabajo remoto</h3>
-            </li>
-            <li>
-                <img src="./assets/img/icon2.svg" alt="Repensando la programación" title="Repensando la programación">
-                <h3>Repensando la programación</h3>
-            </li>
-            <li>
-                <img src="./assets/img/icon3.svg" alt="Bases del código" title="Bases del código">
-                <h3>Bases del código</h3>
-            </li>
-            <li>
-                <img src="./assets/img/icon4.svg" alt="Seguridad informática" title="Seguridad informática">
-                <h3>Seguridad informática</h3>
-            </li>
-        </ul>
-    </section>
-    <section class="novedades diagonal" id="ultimas-novedades">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="white" points="0,100 0,0 100,0"></polygon>
-        </svg>
-        <h2>¿Querés las últimas novedades?</h2>
-        <a href="#episodios" class="btn">ESCUCHÁ LOS EPISODIOS</a>
-    </section>
-    <footer>
-        <p>© 2019— Hello blue pale dot </p>
-        <ul class="social">
-            <li>
-                <a href="#" title="Spotify" target="_blank">
-                    <i class="fab fa-spotify"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Twitter" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Facebook" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Telegram" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./assets/js/functions.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Cristian Brunacci">
+        <meta
+            name="description"
+            content="Proyecto de Lading page para la carrera de desarrollo web full stack">
+        <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://necolas.github.io/normalize.css/latest/normalize.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+            integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+        <title>Podcast - Acamica</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="./assets/img/logo.svg" alt="Logo" title="Logo">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#episodios" title="Episodios">
+                        Episodios
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#nosotros" title="Nosotros">
+                        Nosotros
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#entrevistas" title="Entrevistas">
+                        Entrevistas
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#topicos" title="Topicos">Topicos</a>
+                </li>
+                <li class="toggle">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="home" id="main">
+            <h1>Hello
+                <span class="tachado">world</span>
+                pale blue dot</h1>
+            <p>
+                El portal de podcasts que explora el mundo de la programación y la tecnología.
+                Nuevos episodios, todos los jueves cada 15 días.
+            </p>
+            <a href="#episodios" class="btn">CONOCÉ MÁS</a>
+        </section>
+        <section class="episodios diagonal" id="episodios">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 100 100"
+                preserveaspectratio="none">
+                <polygon fill="white" points="0,100 0,0 100,0"></polygon>
+            </svg>
+            <h2>Episodios</h2>
+            <div class="widgets">
+                <iframe
+                    src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                    height="232"
+                    allow="encrypted-media"></iframe>
+                <iframe
+                    src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                    height="232"
+                    allow="encrypted-media"></iframe>
+                <iframe
+                    src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                    height="232"
+                    allow="encrypted-media"></iframe>
+                <iframe
+                    src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+                    height="232"
+                    allow="encrypted-media"></iframe>
+            </div>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 100 100"
+                preserveaspectratio="none">
+                <polygon fill="white" points="0,100 100,0 100,100"></polygon>
+            </svg>
+        </section>
+        <section class="nosotros" id="nosotros">
+            <img src="./assets/img/phone.png" alt="Phone" title="Phone" class="telefono">
+            <div class="texto">
+                <h2>De dónde venimos</h2>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some
+                    privileged position in the Universe, are challenged by this point of pale light.
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our
+                    obscurity, in all this vastness, there is no hint that help will come from
+                    elsewhere to save us from ourselves.</p>
+            </div>
+        </section>
+        <section class="entrevistas" id="entrevistas">
+            <h2>Invitadas/os estelares</h2>
+            <div class="gallery">
+                <img
+                    src="./assets/img/grace-hopper.png"
+                    alt="Grace Hopper"
+                    title="Grace Hopper">
+                <img
+                    src="./assets/img/Katie-Bouman.png"
+                    alt="Katie Bouman"
+                    title="Katie Bouman">
+                <img
+                    src="./assets/img/Margaret_Hamilton.png"
+                    alt="Margaret Hamilton"
+                    title="Margaret Hamilton">
+                <img
+                    src="./assets/img/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
+                    alt="An E.R.A.Univac 1103 computer in the 1950s"
+                    title="An E.R.A.Univac 1103 computer in the 1950s">
+                <img
+                    src="./assets/img/Computer_operators_with_an_Eniac.png"
+                    alt="Computer operators with an Eniac"
+                    title="Computer operators with an Eniac">
+                <img src="./assets/img/susan-kare.png" alt="Susan Kare" title="Susan Kare">
+            </div>
+        </section>
+        <section class="topicos">
+            <h2>Algunos de nuestros temas</h2>
+            <ul>
+                <li>
+                    <img src="./assets/img/icon1.svg" alt="Trabajo remoto" title="Trabajo remoto">
+                    <h3>Trabajo remoto</h3>
+                </li>
+                <li>
+                    <img
+                        src="./assets/img/icon2.svg"
+                        alt="Repensando la programación"
+                        title="Repensando la programación">
+                    <h3>Repensando la programación</h3>
+                </li>
+                <li>
+                    <img
+                        src="./assets/img/icon3.svg"
+                        alt="Bases del código"
+                        title="Bases del código">
+                    <h3>Bases del código</h3>
+                </li>
+                <li>
+                    <img
+                        src="./assets/img/icon4.svg"
+                        alt="Seguridad informática"
+                        title="Seguridad informática">
+                    <h3>Seguridad informática</h3>
+                </li>
+            </ul>
+        </section>
+        <section class="novedades diagonal" id="ultimas-novedades">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 100 100"
+                preserveaspectratio="none">
+                <polygon fill="white" points="0,100 0,0 100,0"></polygon>
+            </svg>
+            <h2>¿Querés las últimas novedades?</h2>
+            <a href="#episodios" class="btn">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
+        <footer>
+            <p>© 2019— Hello blue pale dot</p>
+            <ul class="social">
+                <li>
+                    <a href="#" title="Spotify" target="_blank">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Telegram" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./assets/js/functions.js"></script>
+    </body>
 </html>

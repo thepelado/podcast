@@ -4,34 +4,28 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-footer p {
-    font-size: 14px;
-    line-height: 22px;
-    display: inline-flex;
-    margin-top: 24px;
-    margin-bottom: 16px;
-}
-
-footer .social {
-    list-style: none;
-    display: inline-flex;
-    float: right;
-    margin-bottom: 31px;
-}
-
-footer .social li {
-    margin-right: 36px;
-}
-
-footer .social li:last-child {
-    margin-right: 0px;
-}
-
-footer .social li i {
-    font-size: 18px;
-    line-height: 28px;
+    & p {
+        font-size: 14px;
+        line-height: 22px;
+        display: inline-flex;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    & .social {
+        list-style: none;
+        display: inline-flex;
+        float: right;
+        margin-bottom: 31px;
+        padding: 0;
+        & li {
+            font-size: 18px;
+            line-height: 28px;
+            margin-right: 36px;
+            &:last-child {
+                margin-right: 0px;
+            }            
+        }
+    }
 }
 
 @media all and (min-width: $breakpoint-desktop) {
@@ -43,20 +37,18 @@ footer .social li i {
         justify-content: flex-start;
         align-items: center;
         flex-direction: row;
-    }
-
-    footer p {
-        font-size: 16px;
-        line-height: 28px;
-        margin-top: 36px;
-        flex: 50%;
-    }
-
-    footer .social {
-        margin-top: 36px;
-        display: flex;
-        margin-bottom: 31px;
-        justify-content: flex-end;
-        align-items: flex-start;
+        & p {
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 36px;
+            flex: 50%;
+        }
+        & .social {
+            margin-top: 36px;
+            display: flex;
+            margin-bottom: 31px;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
     }
 }
