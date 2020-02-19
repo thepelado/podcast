@@ -1,39 +1,85 @@
 /*1.1 Navbar */
 nav {
-    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        width: 24px;
+        height: 24px;
+        margin: 10px 0 10px 16px;
+    }
+    & .menu-icon {
+        cursor: pointer;
+        padding: 16px 19px;
+        position: relative;
+        user-select: none;
+        margin-left: auto;
+        & .navicon {
+            background: #333;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+            &:before,
+            &:after {
+                background: #333;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                width: 100%;
+            }
+            
+            &:before {
+                top: 5px;
+            }
+            
+            &:after {
+                top: -5px;
+            }
+        }
+    }
+    & .menu-btn {
+        display: none;
+        &:checked ~ .menu {
+            display: block;
+        }
+        
+        &:checked ~ .menu-icon .navicon {
+            background: transparent;
+        }
+        
+        &:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+        
+        &:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+        
+        &:checked ~ .menu-icon:not(.steps) .navicon:before,
+        &:checked ~ .menu-icon:not(.steps) .navicon:after {
+            top: 0;
+        }
+    }
     & .menu {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        display: none;
+        position: absolute;
+        top: 44px;
+        width: 100%;
         z-index: 10;
-        position: relative;
         & li {
             white-space: nowrap;
-            &.logo {
-                flex: 1;
-                a {
-                    display: inline-flex;
-                }
-                img {
-                    width: 24px;
-                    height: 24px;
-                    margin: 10px 0 10px 16px;
-                }
-            }
-            &.item {
-                background-color: $mobile-background-color;
-                padding: 16px;
-                width: 100%;
-                order: 3;
-                display: none;
-                & a {
-                    color: #FFFFFF; 
-                    text-transform: uppercase;
-                }
+            background-color: $mobile-background-color;
+            padding: 16px;
+            & a {
+                color: #FFFFFF; 
+                text-transform: uppercase;
             }
             &.active {
                 display: block;
@@ -57,42 +103,40 @@ nav {
     
     /*1.1 Nav */
     nav {
-        height: 80px;
         padding: 0px 100px;
+        & img {
+            width: 36px;
+            height: 36px;
+            margin: 0;
+        }
+        & .menu-icon {
+            display: none;
+        }
         & .menu {
+            top: unset;
+            position: unset;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
             & li {
-                &.logo {
-                    order: 0;
-                    & img {
-                        width: 36px;
-                        height: 36px;
-                        margin: 0;
-                        margin-top: 22px;
+                display: block;
+                width: auto;
+                text-align: center;
+                padding: 26px 0 26px 28px;
+                order: 1;
+                background: #FFFFFF;
+                & a {
+                    color: $text-link-normal;
+                    &:hover {
+                        font-weight: 700;
+                        color: $text-link-hover;
                     }
-                }
-                &.item {
-                    display: block;
-                    width: auto;
-                    text-align: center;
-                    padding: 26px 0 26px 28px;
-                    order: 1;
-                    background: #FFFFFF;
-                    & a {
+                    &:active {
                         color: $text-link-normal;
-                        &:hover {
-                            font-weight: 700;
-                            color: $text-link-hover;
-                        }
-                        &:active {
-                            color: $text-link-normal;
-                            font-weight: 500;
-                            text-decoration: line-through;
-                            opacity: .56;
-                        }
+                        font-weight: 500;
+                        text-decoration: line-through;
+                        opacity: .56;
                     }
-                }
-                &.toggle {
-                    display: none; 
                 }
             }
         }
