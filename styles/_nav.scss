@@ -80,19 +80,8 @@ nav {
             & a {
                 color: #FFFFFF; 
                 text-transform: uppercase;
-            }
-            &.active {
-                display: block;
-            }
-            &.toggle {
-                order: 1;
-                font-size: 18px;
-                line-height: 24px;
-                margin-right: 16px;
-                &a {
-                    &:hover {
-                        color: $text-link-normal;
-                    }
+                &.active {
+                    display: block;
                 }
             }
         }

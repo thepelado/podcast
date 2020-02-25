@@ -235,21 +235,8 @@ nav .menu li a {
   text-transform: uppercase;
 }
 
-nav .menu li.active {
+nav .menu li a.active {
   display: block;
-}
-
-nav .menu li.toggle {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  font-size: 18px;
-  line-height: 24px;
-  margin-right: 16px;
-}
-
-nav .menu li.togglea:hover {
-  color: #060A24;
 }
 
 @media all and (min-width: 1440px) {

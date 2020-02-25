@@ -30,10 +30,10 @@
         <nav>
             <img src="./assets/img/logo.svg" alt="Logo" title="Logo">
             <input class="menu-btn" type="checkbox" id="menu-btn"/>
-            <label class="menu-icon" for="menu-btn">
+            <label class="menu-icon" for="menu-btn" id="menu-icon">
                 <span class="navicon"></span>
             </label>
-            <ul class="menu">
+            <ul class="menu" id="menu-items">
                 <li>
                     <a href="#episodios" title="Episodios">
                         Episodios
@@ -204,5 +204,14 @@
                 </li>
             </ul>
         </footer>
+        <script>            
+            document.getElementById('menu-items').onclick = function() {
+                var switcher = document.getElementById('menu-btn');
+                if (switcher.checked)
+                {
+                    document.getElementById('menu-icon').click();
+                }                
+            };            
+        </script>
     </body>
 </html>
