@@ -88,7 +88,7 @@ nav {
     }
 }
 
-@media all and (min-width: $breakpoint-desktop) {
+@media all and (min-width: $breakpoint-menu-desktop) {
     
     /*1.1 Nav */
     nav {
@@ -119,6 +119,7 @@ nav {
                     &:hover {
                         font-weight: 700;
                         color: $text-link-hover;
+                        text-decoration: line-through;
                     }
                     &:active {
                         color: $text-link-normal;
