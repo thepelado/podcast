@@ -239,7 +239,7 @@ nav .menu li a.active {
   display: block;
 }
 
-@media all and (min-width: 416px) {
+@media all and (min-width: 426px) {
   /*1.1 Nav */
   nav {
     padding: 0px 100px;
