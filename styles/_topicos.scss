@@ -12,16 +12,22 @@
         padding: 0;
         margin: 0 auto 34px auto;
         & li {
-            margin-bottom: 42px;
+            margin-bottom: 52px;
             text-align: center;
             flex: 1 0 25%;
+            &:first-child {
+                margin-bottom: 36px;
+            }
             &:last-child {
                 margin-bottom: 0px;
-            }            
+            }
             & img {
                 width: 104px;
                 height: 104px;    
                 padding: 13px 92px;
+            }
+            & h3 {
+                margin: 0 16px;
             }
         }
     }
@@ -34,6 +40,7 @@
     /*1.6 Topicos*/
     .topicos {
         margin-top: 64px;
+        padding: 0;
         & h2 {
             margin-bottom: 56px;
             margin-left: 200px;
@@ -44,6 +51,9 @@
                 & img {
                     padding: 13px 78px;
                     margin-bottom: 16px;
+                }
+                & h3 {
+                    margin: 0 20px;
                 }
             }
         }

@@ -1,21 +1,21 @@
 /*1.4 Nosotros */
 .nosotros {
     align-items: center;
-    & .telefono {
+    .telefono {
         height: 519px;
         margin-top: -105px;
         position: relative;
     }
     
-    & .texto {
+    .texto {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-flow: column;
-        & h2 {
+        h2 {
             margin: 27px 16px 8px 16px;
         }
-        & p {
+        p {
             margin: 0 16px;
         }
     }
@@ -27,21 +27,24 @@
     .nosotros {
         flex-direction: row;
         align-items: unset;
-        justify-content: center;
-    }
-
-    .nosotros .telefono {
-        width: 457.6px;
-        height: 660px;
-        margin-top: -165px;
-    }
-
-    .nosotros .texto {
-        width: 464px;
-    }
-
-    .nosotros .texto h2 {
-        margin-top: 20.4px;
-        margin-bottom: 24px;
+        justify-content: flex-start;
+        .telefono {
+            width: 457.6px;
+            height: 660px;
+            margin-top: -165px;
+            margin-left: 200px;
+        }
+        .texto {
+            width: 464px;
+            margin-left: 62.4px;
+            p {
+                margin: 0;
+            }
+        }    
+        .texto h2 {
+            margin: 0;
+            margin-top: 20.4px;
+            margin-bottom: 24px;
+        }
     }
 }

@@ -1,12 +1,12 @@
 /*1.5 Entrevistas*/
 .entrevistas {
-    & h2 {
+    h2 {
         margin: 54px 16px 14px 16px;
     }
-    & .gallery {
+    .gallery {
         display: flex;
         flex-flow: row wrap;
-        & img {
+        img {
             width: 320px;
             height: 100%;
             flex: 1 0 33.33%;
@@ -20,11 +20,11 @@
     .entrevistas {
         align-items: flex-start;
         justify-content: stretch;
-        & h2 {
+        h2 {
             margin: 64px 0 36px 200px;
         }
-        & .gallery {
-            & img {
+        .gallery {
+            img {
                 width: 480px;
                 flex: 1 0 33.33%;
             }

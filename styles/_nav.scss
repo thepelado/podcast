@@ -8,13 +8,13 @@ nav {
         height: 24px;
         margin: 10px 0 10px 16px;
     }
-    & .menu-icon {
+    .menu-icon {
         cursor: pointer;
         padding: 16px 19px;
         position: relative;
         user-select: none;
         margin-left: auto;
-        & .navicon {
+        .navicon {
             background: #333;
             display: block;
             height: 2px;
@@ -41,7 +41,7 @@ nav {
             }
         }
     }
-    & .menu-btn {
+    .menu-btn {
         display: none;
         &:checked ~ .menu {
             display: block;
@@ -64,7 +64,7 @@ nav {
             top: 0;
         }
     }
-    & .menu {
+    .menu {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -73,11 +73,11 @@ nav {
         top: 44px;
         width: 100%;
         z-index: 10;
-        & li {
+        li {
             white-space: nowrap;
             background-color: $mobile-background-color;
             padding: 16px;
-            & a {
+            a {
                 color: #FFFFFF; 
                 text-transform: uppercase;
                 &.active {
@@ -93,28 +93,28 @@ nav {
     /*1.1 Nav */
     nav {
         padding: 0px 100px;
-        & img {
+        img {
             width: 36px;
             height: 36px;
             margin: 0;
         }
-        & .menu-icon {
+        .menu-icon {
             display: none;
         }
-        & .menu {
+        .menu {
             top: unset;
             position: unset;
             display: flex;
             flex-flow: row;
             justify-content: flex-end;
-            & li {
+            li {
                 display: block;
                 width: auto;
                 text-align: center;
                 padding: 26px 0 26px 28px;
                 order: 1;
                 background: #FFFFFF;
-                & a {
+                a {
                     color: $text-link-normal;
                     &:hover {
                         font-weight: 700;

@@ -3,13 +3,13 @@
     padding-top: 64px;
     padding-bottom: 67px;
     align-items: center;
-    & h2 {
+    h2 {
         color: #FFF;
         text-align: center;
         margin: 0 16px 36px 16px;
     }
     
-    & .btn {
+    .btn {
         padding: 13px 43px;
         margin: 0px 16px;
     }
@@ -22,11 +22,11 @@
         padding-top: 213px;
         padding-bottom: 151px;
         text-align: center;
-        & svg {
+        svg {
             left: 0;
         }
     
-        & .btn {
+        .btn {
             display: inline-block;
         }
     }

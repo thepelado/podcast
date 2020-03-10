@@ -4,20 +4,20 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    & p {
+    p {
         font-size: 14px;
         line-height: 22px;
         display: inline-flex;
         margin-top: 24px;
         margin-bottom: 16px;
     }
-    & .social {
+    .social {
         list-style: none;
         display: inline-flex;
         float: right;
         margin-bottom: 31px;
         padding: 0;
-        & li {
+        li {
             font-size: 18px;
             line-height: 28px;
             margin-right: 36px;
@@ -37,13 +37,13 @@ footer {
         justify-content: flex-start;
         align-items: center;
         flex-direction: row;
-        & p {
+        p {
             font-size: 16px;
             line-height: 28px;
             margin-top: 36px;
             flex: 50%;
         }
-        & .social {
+        .social {
             margin-top: 36px;
             display: flex;
             margin-bottom: 31px;
